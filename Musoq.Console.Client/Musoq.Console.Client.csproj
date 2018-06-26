@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <StartupObject>Musoq.Console.Client.Program</StartupObject>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.2.1" />
+    <PackageReference Include="ConsoleTableExt" Version="2.0.1" />
+    <PackageReference Include="CsvHelper" Version="7.1.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="2.8.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="2.8.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="2.8.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="2.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+    <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Musoq.Converter">
+      <HintPath>libs\Musoq.Converter\Musoq.Converter.dll</HintPath>
+    </Reference>
+    <Reference Include="Musoq.Evaluator">
+      <HintPath>libs\Musoq.Converter\Musoq.Evaluator.dll</HintPath>
+    </Reference>
+    <Reference Include="Musoq.Parser">
+      <HintPath>libs\Musoq.Converter\Musoq.Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="Musoq.Plugins">
+      <HintPath>libs\Musoq.Converter\Musoq.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="Musoq.Schema">
+      <HintPath>libs\Musoq.Converter\Musoq.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="Musoq.Service.Client.Core">
+      <HintPath>libs\Musoq.Service.Client.Core\Musoq.Service.Client.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if not exist &quot;$(TargetDir)\Plugins\&quot; mkdir &quot;$(TargetDir)\Plugins\&quot;&#xD;&#xA;xcopy &quot;$(ProjectDir)libs\Plugins\*.*&quot; &quot;$(TargetDir)\Plugins\&quot; /Y /I /E" />
+  </Target>
+
+</Project>

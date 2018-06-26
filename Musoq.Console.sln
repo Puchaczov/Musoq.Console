@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Musoq.Console.Client", "Musoq.Console.Client\Musoq.Console.Client.csproj", "{327C5CCC-3076-46E0-869B-63BB57BB4C6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Debug|x64.ActiveCfg = Debug|x64
+		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Debug|x64.Build.0 = Debug|x64
+		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Release|x64.ActiveCfg = Release|x64
+		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67AC28D8-5BAC-45BA-A1F5-44E7678FDC52}
+	EndGlobalSection
+EndGlobal
