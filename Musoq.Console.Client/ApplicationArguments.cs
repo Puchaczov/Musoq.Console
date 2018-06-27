@@ -18,5 +18,8 @@ namespace Musoq.Console.Client
 
         [Option("sd", HelpText = "Save response to file")]
         public string QueryScoreFile { get; set; }
+
+        [Option("debugInfo", HelpText = "Will provide additional infos about the internals")]
+        public bool DebugInfo { get; set; }
     }
 }

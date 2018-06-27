@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
+using Musoq.Console.Client.Helpers;
 using Musoq.Converter;
 using Musoq.Converter.Build;
 using Musoq.Evaluator;
@@ -28,6 +29,15 @@ namespace Musoq.Console.Client.Evaluator
             var query = GetQuery();
             var plugins = LoadPlugins();
             ISchemaProvider schemaProvider = new DynamicSchemaProvider(plugins);
+
+            if (Configuration.DebugInfo)
+            {
+                System.Console.WriteLine($"Loaded plugins ({plugins.Count}):");
+                foreach (var plugin in plugins)
+                {
+                    System.Console.WriteLine($"Assembly {plugin.Value.FullName}");
+                }
+            }
 
             var tempDir = Path.Combine(Path.GetTempPath(), "Musoq", "Compiled");
 
@@ -118,6 +128,8 @@ namespace Musoq.Console.Client.Evaluator
                 }
                 catch (Exception e)
                 {
+                    if (Configuration.DebugInfo)
+                        System.Console.WriteLine(e);
                 }
             }
 

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using CommandLine;
 using Musoq.Console.Client.Evaluator;
+using Musoq.Console.Client.Helpers;
 
 namespace Musoq.Console.Client
 {
@@ -30,6 +31,8 @@ namespace Musoq.Console.Client
 
         private static int ProcessArguments(ApplicationArguments appArgs)
         {
+            Configuration.DebugInfo = appArgs.DebugInfo;
+
             EvaluatorBase evaluator;
 
             if (appArgs.UseService)
