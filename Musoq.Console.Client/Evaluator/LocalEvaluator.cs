@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 using Musoq.Converter;
+using Musoq.Converter.Build;
 using Musoq.Evaluator;
 using Musoq.Schema;
 using Musoq.Service.Client.Core;
@@ -24,8 +25,9 @@ namespace Musoq.Console.Client.Evaluator
             var watch = new Stopwatch();
             watch.Start();
 
+            var query = GetQuery();
             var plugins = LoadPlugins();
-            var schemaProvider = new DynamicSchemaProvider(plugins);
+            ISchemaProvider schemaProvider = new DynamicSchemaProvider(plugins);
 
             var tempDir = Path.Combine(Path.GetTempPath(), "Musoq", "Compiled");
 
@@ -35,7 +37,7 @@ namespace Musoq.Console.Client.Evaluator
             byte[] queryHash;
             using (var hashCreator = new MD5CryptoServiceProvider())
             {
-                queryHash = hashCreator.ComputeHash(Encoding.UTF8.GetBytes(GetQuery()));
+                queryHash = hashCreator.ComputeHash(Encoding.UTF8.GetBytes(query));
             }
 
             var queryHashString = BitConverter.ToString(queryHash).Replace("-", "");
@@ -43,27 +45,44 @@ namespace Musoq.Console.Client.Evaluator
             var dllPath = Path.Combine(tempDir, $"{queryHashString}.dll");
             var pdbPath = Path.Combine(tempDir, $"{queryHashString}.pdb");
 
+            var items = new BuildItems
+            {
+                SchemaProvider = schemaProvider,
+                RawQuery = query
+            };
+
             Assembly assembly;
             if (!File.Exists(dllPath))
             {
-                var arrays = InstanceCreator.CompileForStore(GetQuery(), schemaProvider);
+
+                var chain = new CreateTree(
+                    new TranformTree(
+                        new TurnQueryIntoRunnableCode(null)));
+
+                chain.Build(items);
 
                 using (var writer = new BinaryWriter(File.OpenWrite(dllPath)))
                 {
-                    writer.Write(arrays.DllFile);
+                    writer.Write(items.DllFile);
                 }
 
                 using (var writer = new BinaryWriter(File.OpenWrite(pdbPath)))
                 {
-                    writer.Write(arrays.PdbFile);
+                    writer.Write(items.PdbFile);
                 }
 
-                assembly = Assembly.Load(arrays.DllFile, arrays.PdbFile);
+                assembly = Assembly.Load(items.DllFile, items.PdbFile);
             }
             else
             {
+                var chain = new CreateTree(
+                    new TranformTree(null));
+
+                chain.Build(items);
+
                 assembly = Assembly.LoadFile(dllPath);
             }
+            schemaProvider = items.SchemaProvider;
 
             var runnableType = assembly.GetTypes().Single(type => type.FullName.ToLowerInvariant().Contains("query"));
 
