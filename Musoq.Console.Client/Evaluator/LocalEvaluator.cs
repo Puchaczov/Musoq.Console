@@ -28,7 +28,6 @@ namespace Musoq.Console.Client.Evaluator
 
             var query = GetQuery();
             var plugins = LoadPlugins();
-            ISchemaProvider schemaProvider = new DynamicSchemaProvider(plugins);
 
             if (Configuration.DebugInfo)
             {
@@ -55,18 +54,19 @@ namespace Musoq.Console.Client.Evaluator
             var dllPath = Path.Combine(tempDir, $"{queryHashString}.dll");
             var pdbPath = Path.Combine(tempDir, $"{queryHashString}.pdb");
 
-            var items = new BuildItems
-            {
-                SchemaProvider = schemaProvider,
-                RawQuery = query
-            };
+            var schemaProvider = new DynamicSchemaProvider(plugins);
 
             Assembly assembly;
             if (!File.Exists(dllPath))
             {
+                var items = new BuildItems
+                {
+                    SchemaProvider = schemaProvider,
+                    RawQuery = query
+                };
 
                 var chain = new CreateTree(
-                    new TranformTree(
+                    new TransformTree(
                         new TurnQueryIntoRunnableCode(null)));
 
                 chain.Build(items);
@@ -85,14 +85,8 @@ namespace Musoq.Console.Client.Evaluator
             }
             else
             {
-                var chain = new CreateTree(
-                    new TranformTree(null));
-
-                chain.Build(items);
-
                 assembly = Assembly.LoadFile(dllPath);
             }
-            schemaProvider = items.SchemaProvider;
 
             var runnableType = assembly.GetTypes().Single(type => type.FullName.ToLowerInvariant().Contains("query"));
 
