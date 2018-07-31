@@ -10,8 +10,10 @@ using Musoq.Console.Client.Helpers;
 using Musoq.Converter;
 using Musoq.Converter.Build;
 using Musoq.Evaluator;
+using Musoq.Plugins;
 using Musoq.Schema;
 using Musoq.Service.Client.Core;
+using Environment = Musoq.Plugins.Environment;
 
 namespace Musoq.Console.Client.Evaluator
 {
@@ -64,6 +66,8 @@ namespace Musoq.Console.Client.Evaluator
                     SchemaProvider = schemaProvider,
                     RawQuery = query
                 };
+
+                new Environment().SetValue(Constants.NetStandardDllEnvironmentName, EnvironmentUtils.GetOrCreateEnvironmentVariable());
 
                 var chain = new CreateTree(
                     new TransformTree(
