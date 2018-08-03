@@ -32,6 +32,8 @@ namespace Musoq.Console.Client
         private static int ProcessArguments(ApplicationArguments appArgs)
         {
             Configuration.DebugInfo = appArgs.DebugInfo;
+            Configuration.CompileOnly = appArgs.CompileOnly;
+            Configuration.OutputTranslatedQuery = appArgs.OutputTranslatedQuery;
 
             EvaluatorBase evaluator;
 
@@ -41,6 +43,9 @@ namespace Musoq.Console.Client
                 evaluator = new LocalEvaluator(appArgs);
 
             var result = evaluator.Evaluate();
+
+            if (Configuration.CompileOnly || !string.IsNullOrEmpty(Configuration.OutputTranslatedQuery))
+                return 0;
 
             var dt = new DataTable(result.Name);
 

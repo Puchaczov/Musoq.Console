@@ -59,7 +59,7 @@ namespace Musoq.Console.Client.Evaluator
             var schemaProvider = new DynamicSchemaProvider(plugins);
 
             Assembly assembly;
-            if (!File.Exists(dllPath))
+            if (!File.Exists(dllPath) || Configuration.CompileOnly)
             {
                 var items = new BuildItems
                 {
@@ -85,12 +85,35 @@ namespace Musoq.Console.Client.Evaluator
                     writer.Write(items.PdbFile);
                 }
 
+                if (!string.IsNullOrEmpty(Configuration.OutputTranslatedQuery))
+                {
+                    var path = Configuration.OutputTranslatedQuery;
+                    var fileInfo = new FileInfo(path);
+
+                    if (fileInfo.Directory == null || !fileInfo.Directory.Exists)
+                        throw new DirectoryNotFoundException(fileInfo.DirectoryName);
+
+                    var builder = new StringBuilder();
+                    using (var writer = new StringWriter(builder))
+                    {
+                        items.Compilation?.SyntaxTrees.ElementAt(0).GetRoot().WriteTo(writer);
+                    }
+
+                    using (var file = new StreamWriter(File.OpenWrite(path)))
+                    {
+                        file.Write(builder.ToString());
+                    }
+                }
+
                 assembly = Assembly.Load(items.DllFile, items.PdbFile);
             }
             else
             {
                 assembly = Assembly.LoadFile(dllPath);
             }
+
+            if(Configuration.CompileOnly || !string.IsNullOrEmpty(Configuration.OutputTranslatedQuery))
+                return new ResultTable(string.Empty, new string[0], new object[0][], new string[0], TimeSpan.Zero);
 
             var runnableType = assembly.GetTypes().Single(type => type.FullName.ToLowerInvariant().Contains("query"));
 
