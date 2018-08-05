@@ -15,4 +15,6 @@ Those are switches you can use
     --q "your query here" - Put your query here.
     --qs "your .fql file here" - Put file here if you want to load your query from file instead of passing it through the argument.
     --sd "your file here" - If you want to store the score of processed file as CSV file.
+    --compileOnly - compiles query without running it.
+    --outputTranslatedQuery "Path/To/File.cs" - Translated query will be stored on disk.
 
