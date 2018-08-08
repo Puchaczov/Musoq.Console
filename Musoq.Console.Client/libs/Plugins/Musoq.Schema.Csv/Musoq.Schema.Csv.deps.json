@@ -6,10 +6,10 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "Musoq.Schema.Csv/0.5.0": {
+      "Musoq.Schema.Csv/0.5.1": {
         "dependencies": {
           "CsvHelper": "7.1.0",
-          "Musoq.Schema": "0.5.0"
+          "Musoq.Schema": "0.5.1"
         },
         "runtime": {
           "Musoq.Schema.Csv.dll": {}
@@ -79,7 +79,7 @@
           "Musoq.Plugins.dll": {}
         }
       },
-      "Musoq.Schema/0.5.0": {
+      "Musoq.Schema/0.5.1": {
         "dependencies": {
           "Musoq.Plugins": "0.5.0",
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -91,7 +91,7 @@
     }
   },
   "libraries": {
-    "Musoq.Schema.Csv/0.5.0": {
+    "Musoq.Schema.Csv/0.5.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -178,7 +178,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Musoq.Schema/0.5.0": {
+    "Musoq.Schema/0.5.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

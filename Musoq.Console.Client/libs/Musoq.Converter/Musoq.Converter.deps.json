@@ -7,9 +7,9 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Musoq.Converter/0.5.0": {
+      "Musoq.Converter/0.5.1": {
         "dependencies": {
-          "Musoq.Evaluator": "0.5.0",
+          "Musoq.Evaluator": "0.5.1",
           "Musoq.Parser": "0.5.0",
           "NETStandard.Library": "2.0.3"
         },
@@ -1123,14 +1123,14 @@
           }
         }
       },
-      "Musoq.Evaluator/0.5.0": {
+      "Musoq.Evaluator/0.5.1": {
         "dependencies": {
           "Microsoft.CodeAnalysis": "2.8.2",
           "Microsoft.CodeAnalysis.CSharp": "2.8.2",
           "Microsoft.CodeAnalysis.Workspaces.Common": "2.8.2",
           "Musoq.Parser": "0.5.0",
           "Musoq.Plugins": "0.5.0",
-          "Musoq.Schema": "0.5.0"
+          "Musoq.Schema": "0.5.1"
         },
         "runtime": {
           "Musoq.Evaluator.dll": {}
@@ -1138,7 +1138,7 @@
       },
       "Musoq.Parser/0.5.0": {
         "dependencies": {
-          "Musoq.Schema": "0.5.0"
+          "Musoq.Schema": "0.5.1"
         },
         "runtime": {
           "Musoq.Parser.dll": {}
@@ -1149,7 +1149,7 @@
           "Musoq.Plugins.dll": {}
         }
       },
-      "Musoq.Schema/0.5.0": {
+      "Musoq.Schema/0.5.1": {
         "dependencies": {
           "Musoq.Plugins": "0.5.0",
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -1161,7 +1161,7 @@
     }
   },
   "libraries": {
-    "Musoq.Converter/0.5.0": {
+    "Musoq.Converter/0.5.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1810,7 +1810,7 @@
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
-    "Musoq.Evaluator/0.5.0": {
+    "Musoq.Evaluator/0.5.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1825,7 +1825,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Musoq.Schema/0.5.0": {
+    "Musoq.Schema/0.5.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
