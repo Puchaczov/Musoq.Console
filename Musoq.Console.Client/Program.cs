@@ -5,6 +5,8 @@ using System.Reflection;
 using CommandLine;
 using Musoq.Console.Client.Evaluator;
 using Musoq.Console.Client.Helpers;
+using Musoq.Converter.Exceptions;
+using Musoq.Service.Client.Core;
 
 namespace Musoq.Console.Client
 {
@@ -42,7 +44,20 @@ namespace Musoq.Console.Client
             else
                 evaluator = new LocalEvaluator(appArgs);
 
-            var result = evaluator.Evaluate();
+            ResultTable result;
+            try
+            {
+                result = evaluator.Evaluate();
+            }
+            catch (CompilationException exc)
+            {
+                if(!string.IsNullOrEmpty(exc.InnerException?.Message))
+                    System.Console.WriteLine(exc.InnerException.Message);
+                else
+                    System.Console.WriteLine(exc.Message);
+
+                return 1;
+            }
 
             if (Configuration.CompileOnly || !string.IsNullOrEmpty(Configuration.OutputTranslatedQuery))
                 return 0;

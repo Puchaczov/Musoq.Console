@@ -9,6 +9,7 @@ using System.Text;
 using Musoq.Console.Client.Helpers;
 using Musoq.Converter;
 using Musoq.Converter.Build;
+using Musoq.Converter.Exceptions;
 using Musoq.Evaluator;
 using Musoq.Plugins;
 using Musoq.Schema;
@@ -69,20 +70,36 @@ namespace Musoq.Console.Client.Evaluator
 
                 new Environment().SetValue(Constants.NetStandardDllEnvironmentName, EnvironmentUtils.GetOrCreateEnvironmentVariable());
 
-                var chain = new CreateTree(
-                    new TransformTree(
-                        new TurnQueryIntoRunnableCode(null)));
-
-                chain.Build(items);
-
-                using (var writer = new BinaryWriter(File.OpenWrite(dllPath)))
+                var throwAfterSave = false;
+                CompilationException exc = null;
+                try
                 {
-                    writer.Write(items.DllFile);
+                    BuildChain chain = new CreateTree(
+                        new TransformTree(
+                            new TurnQueryIntoRunnableCode(null)));
+
+                    chain.Build(items);
+                }
+                catch (CompilationException ce)
+                {
+                    throwAfterSave = true;
+                    exc = ce;
                 }
 
-                using (var writer = new BinaryWriter(File.OpenWrite(pdbPath)))
+                if (items.DllFile?.Length > 0)
                 {
-                    writer.Write(items.PdbFile);
+                    using (var writer = new BinaryWriter(File.OpenWrite(dllPath)))
+                    {
+                        writer.Write(items.DllFile);
+                    }
+                }
+
+                if (items.PdbFile?.Length > 0)
+                {
+                    using (var writer = new BinaryWriter(File.OpenWrite(pdbPath)))
+                    {
+                        writer.Write(items.PdbFile);
+                    }
                 }
 
                 if (!string.IsNullOrEmpty(Configuration.OutputTranslatedQuery))
@@ -104,6 +121,9 @@ namespace Musoq.Console.Client.Evaluator
                         file.Write(builder.ToString());
                     }
                 }
+
+                if (throwAfterSave)
+                    throw exc;
 
                 assembly = Assembly.Load(items.DllFile, items.PdbFile);
             }

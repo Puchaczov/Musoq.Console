@@ -7,10 +7,10 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Musoq.Converter/0.5.1": {
+      "Musoq.Converter/0.5.4": {
         "dependencies": {
-          "Musoq.Evaluator": "0.5.1",
-          "Musoq.Parser": "0.5.0",
+          "Musoq.Evaluator": "0.5.4",
+          "Musoq.Parser": "0.5.4",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
@@ -1123,35 +1123,35 @@
           }
         }
       },
-      "Musoq.Evaluator/0.5.1": {
+      "Musoq.Evaluator/0.5.4": {
         "dependencies": {
           "Microsoft.CodeAnalysis": "2.8.2",
           "Microsoft.CodeAnalysis.CSharp": "2.8.2",
           "Microsoft.CodeAnalysis.Workspaces.Common": "2.8.2",
-          "Musoq.Parser": "0.5.0",
-          "Musoq.Plugins": "0.5.0",
-          "Musoq.Schema": "0.5.1"
+          "Musoq.Parser": "0.5.4",
+          "Musoq.Plugins": "0.6.2",
+          "Musoq.Schema": "0.5.4"
         },
         "runtime": {
           "Musoq.Evaluator.dll": {}
         }
       },
-      "Musoq.Parser/0.5.0": {
+      "Musoq.Parser/0.5.4": {
         "dependencies": {
-          "Musoq.Schema": "0.5.1"
+          "Musoq.Schema": "0.5.4"
         },
         "runtime": {
           "Musoq.Parser.dll": {}
         }
       },
-      "Musoq.Plugins/0.5.0": {
+      "Musoq.Plugins/0.6.2": {
         "runtime": {
           "Musoq.Plugins.dll": {}
         }
       },
-      "Musoq.Schema/0.5.1": {
+      "Musoq.Schema/0.5.4": {
         "dependencies": {
-          "Musoq.Plugins": "0.5.0",
+          "Musoq.Plugins": "0.6.2",
           "System.Reflection.Emit.Lightweight": "4.3.0"
         },
         "runtime": {
@@ -1161,7 +1161,7 @@
     }
   },
   "libraries": {
-    "Musoq.Converter/0.5.1": {
+    "Musoq.Converter/0.5.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1810,22 +1810,22 @@
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
-    "Musoq.Evaluator/0.5.1": {
+    "Musoq.Evaluator/0.5.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Musoq.Parser/0.5.0": {
+    "Musoq.Parser/0.5.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Musoq.Plugins/0.5.0": {
+    "Musoq.Plugins/0.6.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Musoq.Schema/0.5.1": {
+    "Musoq.Schema/0.5.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
