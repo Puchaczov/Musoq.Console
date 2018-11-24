@@ -1,36 +1,36 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "4e6b5f11494f022727d80e327cf50f21281b7326"
+    "signature": "a0a7441db76b28074bb8ce805ee9f14a24db6cf4"
   },
   "compilationOptions": {},
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "Musoq.Converter/0.5.4": {
+      "Musoq.Converter/0.6.4": {
         "dependencies": {
-          "Musoq.Evaluator": "0.5.4",
-          "Musoq.Parser": "0.5.4",
+          "Musoq.Evaluator": "0.6.4",
+          "Musoq.Parser": "0.6.4",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "Musoq.Converter.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis/2.8.2": {
+      "Microsoft.CodeAnalysis/2.9.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "2.8.2",
-          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "2.8.2"
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "2.9.0",
+          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "2.9.0"
         }
       },
-      "Microsoft.CodeAnalysis.Analyzers/1.1.0": {},
-      "Microsoft.CodeAnalysis.Common/2.8.2": {
+      "Microsoft.CodeAnalysis.Analyzers/2.6.1": {},
+      "Microsoft.CodeAnalysis.Common/2.9.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Analyzers": "1.1.0",
+          "Microsoft.CodeAnalysis.Analyzers": "2.6.1",
           "System.AppContext": "4.3.0",
           "System.Collections": "4.3.0",
           "System.Collections.Concurrent": "4.3.0",
-          "System.Collections.Immutable": "1.3.1",
+          "System.Collections.Immutable": "1.5.0",
           "System.Console": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Diagnostics.FileVersionInfo": "4.3.0",
@@ -44,7 +44,7 @@
           "System.Linq": "4.3.0",
           "System.Linq.Expressions": "4.3.0",
           "System.Reflection": "4.3.0",
-          "System.Reflection.Metadata": "1.4.2",
+          "System.Reflection.Metadata": "1.6.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -58,6 +58,7 @@
           "System.Text.Encoding.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0",
+          "System.Threading.Tasks.Extensions": "4.3.0",
           "System.Threading.Tasks.Parallel": "4.3.0",
           "System.Threading.Thread": "4.3.0",
           "System.ValueTuple": "4.3.0",
@@ -68,60 +69,265 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.dll": {
-            "assemblyVersion": "2.8.0.0",
-            "fileVersion": "2.8.2.62916"
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.63208"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.3/cs/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.3/de/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.3/es/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.3/fr/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.3/it/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.3/ja/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.3/ko/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.3/pl/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.3/pt-BR/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.3/ru/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.3/tr/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.3/zh-Hans/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.3/zh-Hant/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "zh-Hant"
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp/2.8.2": {
+      "Microsoft.CodeAnalysis.CSharp/2.9.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "2.8.2"
+          "Microsoft.CodeAnalysis.Common": "2.9.0"
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.dll": {
-            "assemblyVersion": "2.8.0.0",
-            "fileVersion": "2.8.2.62916"
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.63208"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.3/cs/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.3/de/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.3/es/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.3/fr/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.3/it/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.3/ja/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.3/ko/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.3/pl/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.3/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.3/ru/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.3/tr/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.3/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.3/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "zh-Hant"
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.2": {
+      "Microsoft.CodeAnalysis.CSharp.Workspaces/2.9.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "2.8.2",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "2.8.2"
+          "Microsoft.CodeAnalysis.CSharp": "2.9.0",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "2.9.0"
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
-            "assemblyVersion": "2.8.0.0",
-            "fileVersion": "2.8.2.62916"
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.63208"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.3/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.3/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.3/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.3/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.3/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.3/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.3/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.3/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.3/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.3/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.3/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.3/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.3/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
+            "locale": "zh-Hant"
           }
         }
       },
-      "Microsoft.CodeAnalysis.VisualBasic/2.8.2": {
+      "Microsoft.CodeAnalysis.VisualBasic/2.9.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "2.8.2"
+          "Microsoft.CodeAnalysis.Common": "2.9.0"
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.dll": {
-            "assemblyVersion": "2.8.0.0",
-            "fileVersion": "2.8.2.62916"
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.63208"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.3/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.3/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.3/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.3/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.3/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.3/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.3/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.3/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.3/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.3/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.3/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.3/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.3/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "zh-Hant"
           }
         }
       },
-      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/2.8.2": {
+      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/2.9.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.VisualBasic": "2.8.2",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "2.8.2"
+          "Microsoft.CodeAnalysis.VisualBasic": "2.9.0",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "2.9.0"
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {
-            "assemblyVersion": "2.8.0.0",
-            "fileVersion": "2.8.2.62916"
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.63208"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.3/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.3/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.3/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.3/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.3/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.3/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.3/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.3/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.3/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.3/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.3/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.3/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.3/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll": {
+            "locale": "zh-Hant"
           }
         }
       },
-      "Microsoft.CodeAnalysis.Workspaces.Common/2.8.2": {
+      "Microsoft.CodeAnalysis.Workspaces.Common/2.9.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "2.8.2",
+          "Microsoft.CodeAnalysis.Common": "2.9.0",
           "System.Composition": "1.0.31",
           "System.Diagnostics.Contracts": "4.3.0",
           "System.Linq.Parallel": "4.3.0",
@@ -131,8 +337,49 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {
-            "assemblyVersion": "2.8.0.0",
-            "fileVersion": "2.8.2.62916"
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.63208"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.3/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard1.3/de/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.3/es/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.3/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.3/it/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.3/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.3/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.3/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard1.3/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard1.3/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.3/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard1.3/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.3/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
+            "locale": "zh-Hant"
           }
         }
       },
@@ -244,21 +491,11 @@
           }
         }
       },
-      "System.Collections.Immutable/1.3.1": {
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
+      "System.Collections.Immutable/1.5.0": {
         "runtime": {
-          "lib/netstandard1.0/System.Collections.Immutable.dll": {
-            "assemblyVersion": "1.2.1.0",
-            "fileVersion": "4.6.24816.1"
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "assemblyVersion": "1.2.3.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -404,7 +641,7 @@
           "System.IO": "4.3.0",
           "System.IO.FileSystem": "4.3.0",
           "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Reflection.Metadata": "1.4.2",
+          "System.Reflection.Metadata": "1.6.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
           "System.Runtime.InteropServices": "4.3.0"
@@ -414,7 +651,7 @@
         "dependencies": {
           "System.IO.FileSystem": "4.3.0",
           "System.Reflection": "4.3.0",
-          "System.Reflection.Metadata": "1.4.2",
+          "System.Reflection.Metadata": "1.6.0",
           "System.Runtime": "4.3.0"
         },
         "runtime": {
@@ -664,29 +901,14 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.Metadata/1.4.2": {
+      "System.Reflection.Metadata/1.6.0": {
         "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Collections.Immutable": "1.3.1",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.IO.Compression": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
+          "System.Collections.Immutable": "1.5.0"
         },
         "runtime": {
-          "lib/netstandard1.1/System.Reflection.Metadata.dll": {
-            "assemblyVersion": "1.4.1.0",
-            "fileVersion": "4.6.24816.1"
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+            "assemblyVersion": "1.4.3.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -1123,35 +1345,35 @@
           }
         }
       },
-      "Musoq.Evaluator/0.5.4": {
+      "Musoq.Evaluator/0.6.4": {
         "dependencies": {
-          "Microsoft.CodeAnalysis": "2.8.2",
-          "Microsoft.CodeAnalysis.CSharp": "2.8.2",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "2.8.2",
-          "Musoq.Parser": "0.5.4",
-          "Musoq.Plugins": "0.6.2",
-          "Musoq.Schema": "0.5.4"
+          "Microsoft.CodeAnalysis": "2.9.0",
+          "Microsoft.CodeAnalysis.CSharp": "2.9.0",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "2.9.0",
+          "Musoq.Parser": "0.6.4",
+          "Musoq.Plugins": "0.7.2",
+          "Musoq.Schema": "0.6.4"
         },
         "runtime": {
           "Musoq.Evaluator.dll": {}
         }
       },
-      "Musoq.Parser/0.5.4": {
+      "Musoq.Parser/0.6.4": {
         "dependencies": {
-          "Musoq.Schema": "0.5.4"
+          "Musoq.Schema": "0.6.4"
         },
         "runtime": {
           "Musoq.Parser.dll": {}
         }
       },
-      "Musoq.Plugins/0.6.2": {
+      "Musoq.Plugins/0.7.2": {
         "runtime": {
           "Musoq.Plugins.dll": {}
         }
       },
-      "Musoq.Schema/0.5.4": {
+      "Musoq.Schema/0.6.4": {
         "dependencies": {
-          "Musoq.Plugins": "0.6.2",
+          "Musoq.Plugins": "0.7.2",
           "System.Reflection.Emit.Lightweight": "4.3.0"
         },
         "runtime": {
@@ -1161,66 +1383,66 @@
     }
   },
   "libraries": {
-    "Musoq.Converter/0.5.4": {
+    "Musoq.Converter/0.6.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.CodeAnalysis/2.8.2": {
+    "Microsoft.CodeAnalysis/2.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EeHTB0tY+iGMbmiOzyykypOkcuAacBB1CW2aXwoO22FjBozegqsGdbbhxeIH/ntkhOhjNIfv0LBQCrx7ypIfEQ==",
-      "path": "microsoft.codeanalysis/2.8.2",
-      "hashPath": "microsoft.codeanalysis.2.8.2.nupkg.sha512"
+      "sha512": "sha512-aSPsUf5rriB4+Gc/HhtmJpNXGiB0k3NDhy58vOKkyOG2ccgyMzAl/lvNhEpebY/iGshczriC6PzSuC3IQsr8mg==",
+      "path": "microsoft.codeanalysis/2.9.0",
+      "hashPath": "microsoft.codeanalysis.2.9.0.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
+    "Microsoft.CodeAnalysis.Analyzers/2.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
-      "path": "microsoft.codeanalysis.analyzers/1.1.0",
-      "hashPath": "microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512"
+      "sha512": "sha512-x9MfOXfTj/tdgm3rV15niL/J0T36ZPiVrIfO3Tax9Lv4fLGnVZJXSQatZezJ+tX+YYk2ZAPbq87vnSFwh1Je9w==",
+      "path": "microsoft.codeanalysis.analyzers/2.6.1",
+      "hashPath": "microsoft.codeanalysis.analyzers.2.6.1.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Common/2.8.2": {
+    "Microsoft.CodeAnalysis.Common/2.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-69e6Y+eCdllSRRlLLEs8qf7C4b7XhgG2ZQW9X+n7JomrVZ7SPcMF2asPbRTSK2dRJXDlhgxb8d+a8FxFiaoTYQ==",
-      "path": "microsoft.codeanalysis.common/2.8.2",
-      "hashPath": "microsoft.codeanalysis.common.2.8.2.nupkg.sha512"
+      "sha512": "sha512-gWTphgR8eHu39XcrfhxE8WwD35C/vaR06QiKM1TaCbjmgPafZ9G3TY7eeT44BfHVMQEGYZmjV5NZNQLm2F7ZTQ==",
+      "path": "microsoft.codeanalysis.common/2.9.0",
+      "hashPath": "microsoft.codeanalysis.common.2.9.0.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.CSharp/2.8.2": {
+    "Microsoft.CodeAnalysis.CSharp/2.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6PwtKdwBv+0+2QqFXZXg7oYXS0v4eYwaA3Jlv2yJLFihv5puQqtVupOM6yecsUhTkdN1ul1YyVZldkPUKMldAQ==",
-      "path": "microsoft.codeanalysis.csharp/2.8.2",
-      "hashPath": "microsoft.codeanalysis.csharp.2.8.2.nupkg.sha512"
+      "sha512": "sha512-RNACUadFXlT3/Y4XIVI1+g3hpGgToYJyVTRBVFmhE8gtRA2snM5dPKv2e4Qz7K/3Ap7Ky+YgIKCO4YsmWqal/A==",
+      "path": "microsoft.codeanalysis.csharp/2.9.0",
+      "hashPath": "microsoft.codeanalysis.csharp.2.9.0.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.2": {
+    "Microsoft.CodeAnalysis.CSharp.Workspaces/2.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LD3AnKNuvz1VdSeSujWKWK+Q4FDrjsa0+sZuvP24aM7iZDEs2XLuo6aSVRA0y77u3Hbu7g93kROwcnQv/91KRg==",
-      "path": "microsoft.codeanalysis.csharp.workspaces/2.8.2",
-      "hashPath": "microsoft.codeanalysis.csharp.workspaces.2.8.2.nupkg.sha512"
+      "sha512": "sha512-Kis5VedBJjtdlYlI9erCAnqz2fVgRWLHCDYMIKRXsD4CVWrwrm8sCq3qmY9Drmit85StquRPFw5z8YMhDCB7RQ==",
+      "path": "microsoft.codeanalysis.csharp.workspaces/2.9.0",
+      "hashPath": "microsoft.codeanalysis.csharp.workspaces.2.9.0.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.VisualBasic/2.8.2": {
+    "Microsoft.CodeAnalysis.VisualBasic/2.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Bz+QPanuPqjxnlPOkeGqEbGlWI9x5/o4T9lDK5UEq2EZJy48XFFn4fZ0GFRIG6mlIiLJ3hErpXmgJKyITqNzQw==",
-      "path": "microsoft.codeanalysis.visualbasic/2.8.2",
-      "hashPath": "microsoft.codeanalysis.visualbasic.2.8.2.nupkg.sha512"
+      "sha512": "sha512-4nxVFgxywDHttOSLh9z36QGUdsTFz80A/M+qc2bgZ3GBuTR9+FeDPIap8DQrBcDZWO1Kb+0QC6b65jZvgcZP5g==",
+      "path": "microsoft.codeanalysis.visualbasic/2.9.0",
+      "hashPath": "microsoft.codeanalysis.visualbasic.2.9.0.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.VisualBasic.Workspaces/2.8.2": {
+    "Microsoft.CodeAnalysis.VisualBasic.Workspaces/2.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+GtOHQwW9BOPM+lodXpASLt99ZD1mialqLwwKzF6no8C/Hj0NM6aq4LI4fBwJdzIs07sZl83wNK/SF1Zlytzhw==",
-      "path": "microsoft.codeanalysis.visualbasic.workspaces/2.8.2",
-      "hashPath": "microsoft.codeanalysis.visualbasic.workspaces.2.8.2.nupkg.sha512"
+      "sha512": "sha512-dL9+IJPk7mZ9LFY0saaXk1adKbEDhHe+U+1fG4F7o4NsvZqcOS/6sRcEWl253gi2ZoFoonDDB3sffhrlg1ITIQ==",
+      "path": "microsoft.codeanalysis.visualbasic.workspaces/2.9.0",
+      "hashPath": "microsoft.codeanalysis.visualbasic.workspaces.2.9.0.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Workspaces.Common/2.8.2": {
+    "Microsoft.CodeAnalysis.Workspaces.Common/2.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qizigUw3r+vJZDz96RAkKgjeflrrdRqNvs9jjQShneWUfaW4n70eyj7d6yGU0X3Ovdbd5saoydecdE7SOa4DTA==",
-      "path": "microsoft.codeanalysis.workspaces.common/2.8.2",
-      "hashPath": "microsoft.codeanalysis.workspaces.common.2.8.2.nupkg.sha512"
+      "sha512": "sha512-KGkaumh6O0gS0RBWHHIfx34u5sm7vhgTDaFOcKm60tELh6Jy6OYNtdB/Iyefvvwb+PaZIcUg+9hbGBQ1GdCHqA==",
+      "path": "microsoft.codeanalysis.workspaces.common/2.9.0",
+      "hashPath": "microsoft.codeanalysis.workspaces.common.2.9.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -1383,12 +1605,12 @@
       "path": "system.collections.concurrent/4.3.0",
       "hashPath": "system.collections.concurrent.4.3.0.nupkg.sha512"
     },
-    "System.Collections.Immutable/1.3.1": {
+    "System.Collections.Immutable/1.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-n+AGX7zmiZumW9aggOkXaHzUeAS3EfeTErnkKCusyONUozbTv+kMb8VE36m+ldV6kF9g57G2c641KCdgH9E0pg==",
-      "path": "system.collections.immutable/1.3.1",
-      "hashPath": "system.collections.immutable.1.3.1.nupkg.sha512"
+      "sha512": "sha512-EXKiDFsChZW0RjrZ4FYHu9aW6+P4MCgEDCklsVseRfhoO0F+dXeMSsMRAlVXIo06kGJ/zv+2w1a2uc2+kxxSaQ==",
+      "path": "system.collections.immutable/1.5.0",
+      "hashPath": "system.collections.immutable.1.5.0.nupkg.sha512"
     },
     "System.Composition/1.0.31": {
       "type": "package",
@@ -1593,12 +1815,12 @@
       "path": "system.reflection.extensions/4.3.0",
       "hashPath": "system.reflection.extensions.4.3.0.nupkg.sha512"
     },
-    "System.Reflection.Metadata/1.4.2": {
+    "System.Reflection.Metadata/1.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KYPNMDrLB2R+G5JJiJ2fjBpihtktKVIjsirmyyv+VDo5rQkIR9BWeCYM1wDSzbQatWNZ/NQfPsQyTB1Ui3qBfQ==",
-      "path": "system.reflection.metadata/1.4.2",
-      "hashPath": "system.reflection.metadata.1.4.2.nupkg.sha512"
+      "sha512": "sha512-I4aWCii7N1bmn43vviRfJQYW6UAco1G/CcjJouvgGdb/sr2BRTSnddhaPMg2oxu9VHFn8T1z3dTLq0pna8zmtA==",
+      "path": "system.reflection.metadata/1.6.0",
+      "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
     },
     "System.Reflection.Primitives/4.3.0": {
       "type": "package",
@@ -1810,22 +2032,22 @@
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
-    "Musoq.Evaluator/0.5.4": {
+    "Musoq.Evaluator/0.6.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Musoq.Parser/0.5.4": {
+    "Musoq.Parser/0.6.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Musoq.Plugins/0.6.2": {
+    "Musoq.Plugins/0.7.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Musoq.Schema/0.5.4": {
+    "Musoq.Schema/0.6.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

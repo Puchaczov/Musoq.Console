@@ -6,9 +6,9 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "Musoq.Schema.Json/0.5.2": {
+      "Musoq.Schema.Json/0.6.2": {
         "dependencies": {
-          "Musoq.Schema": "0.5.4",
+          "Musoq.Schema": "0.6.4",
           "Newtonsoft.Json": "11.0.2",
           "Newtonsoft.Json.Schema": "3.0.10"
         },
@@ -80,14 +80,14 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "Musoq.Plugins/0.6.2": {
+      "Musoq.Plugins/0.7.2": {
         "runtime": {
           "Musoq.Plugins.dll": {}
         }
       },
-      "Musoq.Schema/0.5.4": {
+      "Musoq.Schema/0.6.4": {
         "dependencies": {
-          "Musoq.Plugins": "0.6.2",
+          "Musoq.Plugins": "0.7.2",
           "System.Reflection.Emit.Lightweight": "4.3.0"
         },
         "runtime": {
@@ -97,7 +97,7 @@
     }
   },
   "libraries": {
-    "Musoq.Schema.Json/0.5.2": {
+    "Musoq.Schema.Json/0.6.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -172,12 +172,12 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "Musoq.Plugins/0.6.2": {
+    "Musoq.Plugins/0.7.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Musoq.Schema/0.5.4": {
+    "Musoq.Schema/0.6.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
