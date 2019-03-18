@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Musoq.Console.Client", "Musoq.Console.Client\Musoq.Console.Client.csproj", "{327C5CCC-3076-46E0-869B-63BB57BB4C6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Musoq.Console.InstallerUpdater", "Musoq.Console.InstallerUpdater\Musoq.Console.InstallerUpdater.csproj", "{8957A92D-C9E5-4D4A-B311-253F9E637495}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,14 @@ Global
 		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Release|x64.ActiveCfg = Release|x64
 		{327C5CCC-3076-46E0-869B-63BB57BB4C6F}.Release|x64.Build.0 = Release|x64
+		{8957A92D-C9E5-4D4A-B311-253F9E637495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8957A92D-C9E5-4D4A-B311-253F9E637495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8957A92D-C9E5-4D4A-B311-253F9E637495}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8957A92D-C9E5-4D4A-B311-253F9E637495}.Debug|x64.Build.0 = Debug|Any CPU
+		{8957A92D-C9E5-4D4A-B311-253F9E637495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8957A92D-C9E5-4D4A-B311-253F9E637495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8957A92D-C9E5-4D4A-B311-253F9E637495}.Release|x64.ActiveCfg = Release|Any CPU
+		{8957A92D-C9E5-4D4A-B311-253F9E637495}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

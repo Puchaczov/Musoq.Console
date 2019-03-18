@@ -9,3 +9,16 @@
 /Musoq.Console.Client/libs/Plugins/*/Musoq.Schema.pdb
 /Musoq.Console.Client/libs/Plugins/*/Musoq.Plugins.dll
 /Musoq.Console.Client/libs/Plugins/*/Musoq.Plugins.pdb
+
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/

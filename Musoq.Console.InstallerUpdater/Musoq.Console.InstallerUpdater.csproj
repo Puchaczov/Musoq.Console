@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Musoq.Repository.Installer.Modules" Version="2.0.0" />
+    <PackageReference Include="Musoq.Repository.Installer.Programs" Version="2.0.0" />
+    <PackageReference Include="Musoq.Repository.Package" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
