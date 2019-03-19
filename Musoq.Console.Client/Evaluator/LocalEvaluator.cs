@@ -145,7 +145,7 @@ namespace Musoq.Console.Client.Evaluator
 
             watch.Stop();
 
-            var columns = table.Columns.Select(f => f.Name).ToArray();
+            var columns = table.Columns.Select(f => f.ColumnName).ToArray();
             var rows = table.Select(f => f.Values).ToArray();
             var result = new ResultTable(table.Name, columns, rows, new string[0], watch.Elapsed);
 
