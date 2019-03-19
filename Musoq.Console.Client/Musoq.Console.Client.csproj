@@ -5,6 +5,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <StartupObject>Musoq.Console.Client.Program</StartupObject>
     <Platforms>AnyCPU;x64</Platforms>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

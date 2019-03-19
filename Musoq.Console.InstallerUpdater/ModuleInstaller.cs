@@ -9,7 +9,7 @@ namespace Musoq.Console.InstallerUpdater
     {
         public void Install(IModuleInstallationContext context)
         {
-            var pluginsDir = Path.Combine(context.InstalledProgramDirectoryPath, "Program", "Plugins");
+            var pluginsDir = Path.Combine(context.InstalledProgramDirectoryPath, "Program", "Plugins", context.Name);
 
             if (!Directory.Exists(pluginsDir))
                 Directory.CreateDirectory(pluginsDir);
@@ -28,7 +28,7 @@ namespace Musoq.Console.InstallerUpdater
 
         public void Update(IModuleUpdateContext context)
         {
-            var pluginsDir = Path.Combine(context.InstalledProgramDirectoryPath, "Program", "Plugins");
+            var pluginsDir = Path.Combine(context.InstalledProgramDirectoryPath, "Program", "Plugins", context.Name);
 
             if (!Directory.Exists(pluginsDir))
                 Directory.CreateDirectory(pluginsDir);
