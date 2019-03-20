@@ -23,8 +23,8 @@ namespace Musoq.Console.Starter
                 StartInfo = new ProcessStartInfo()
                 {
                     FileName = "dotnet",
-                    Arguments = $"{Path.Combine(info.ExecutableFileDirectory.FullName, "Program", info.EntryPoint)} {args}",
-                    WorkingDirectory = Path.Combine(info.ExecutableFileDirectory.FullName, "Program"),
+                    Arguments = $"{Path.Combine(info.ExecutableFileDirectory, "Program", info.EntryPoint)} {args}",
+                    WorkingDirectory = Path.Combine(info.ExecutableFileDirectory, "Program"),
                     UseShellExecute = false
                 }
             };
