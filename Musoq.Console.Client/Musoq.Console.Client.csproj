@@ -5,7 +5,7 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <StartupObject>Musoq.Console.Client.Program</StartupObject>
     <Platforms>AnyCPU;x64</Platforms>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -49,7 +49,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="if not exist &quot;$(TargetDir)\Plugins\&quot; mkdir &quot;$(TargetDir)\Plugins\&quot;&#xD;&#xA;xcopy &quot;$(ProjectDir)libs\Plugins\*.*&quot; &quot;$(TargetDir)\Plugins\&quot; /Y /I /E&#xD;&#xA;&#xD;&#xA;dotnet $(SolutionDir)Shared\Musoq.Repository.Packer\Musoq.Repository.Packer.dll --packType 1 --sourceDir &quot;$(SolutionDir)Musoq.Console.Client\$(OutDir)\&quot; --destDir &quot;$(SolutionDir)Musoq.Console.Client\$(OutDir)\&quot; --programName &quot;Musoq.Console.Client&quot; --entryPoint &quot;Musoq.Console.Client.dll&quot; --descriptionFile &quot;$(SolutionDir)Musoq.Console.progdf&quot; --excludedDirs &quot;Plugins&quot; --starterSourceDir &quot;$(SolutionDir)Musoq.Console.Starter\$(OutDir)\&quot; --starterEntryPoint &quot;Musoq.Console.Starter.dll&quot; --modulesInstallerSourceDir &quot;$(SolutionDir)Musoq.Console.InstallerUpdater\$(OutDir)\&quot; --modulesInstallerEntryPoint &quot;Musoq.Console.InstallerUpdater.dll&quot; --programInstallerSourceDir &quot;$(SolutionDir)Musoq.Console.InstallerUpdater\$(OutDir)\&quot; --programInstallerEntryPoint &quot;Musoq.Console.InstallerUpdater.dll&quot;&#xD;&#xA;&#xD;&#xA;" />
+    <Exec Command="if not exist &quot;$(TargetDir)\Plugins\&quot; mkdir &quot;$(TargetDir)\Plugins\&quot;&#xD;&#xA;xcopy &quot;$(ProjectDir)libs\Plugins\*.*&quot; &quot;$(TargetDir)\Plugins\&quot; /Y /I /E&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />
   </Target>
 
 </Project>
